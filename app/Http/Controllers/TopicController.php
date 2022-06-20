@@ -37,11 +37,7 @@ class TopicController extends Controller
      */
     public function store(Request $request, $topic_id)
     {
-        return Discussion::query()->create([
-            'user_id' => $request->user()->id,
-            'topic_id' => $topic_id,
-            'body' => $request->body,
-        ]);
+        //
     }
 
     /**
